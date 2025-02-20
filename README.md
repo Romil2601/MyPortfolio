@@ -1,14 +1,21 @@
- Welcome to my personal portfolio website! This project showcases my skills, projects, and experience as a React.js developer. It features a futuristic design, smooth animations, and a responsive layout.
+# 🌟 My Portfolio  
 
-🔹 Features
-✅ Dark Mode & Light Mode toggle 🌙☀️
-✅ Wavify Animation for a modern, futuristic look 🌊
-✅ Download Resume button 📄
-✅ Responsive Design for mobile & desktop 📱💻
-✅ Tailwind CSS for styling 🎨
+A modern and interactive portfolio website built with **React.js** and **Tailwind CSS**.  
 
-🔹 Technologies Used
-React.js ⚛️
-Tailwind CSS 🎨
-Wavify.js for animated waves 🌊
-Framer Motion (optional for animations) ✨
+## 🔹 Features  
+- 🌙☀️ Dark & Light Mode toggle  
+- 🌊 Animated wave design with Wavify  
+- 📄 Download Resume button  
+- 📱💻 Fully responsive for all devices  
+- 🎨 Styled with Tailwind CSS  
+
+## 🔹 Technologies Used  
+- ⚛️ React.js  
+- 🎨 Tailwind CSS  
+- 🌊 Wavify.js (for wave animations)  
+- ✨ Framer Motion (for smooth animations)  
+
+## 📥 Installation  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/Romil2601/MyPortfolio.git
