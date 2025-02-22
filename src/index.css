@@ -79,7 +79,7 @@ textarea {
 }
 
 #container {
-  border: solid 3px #846CF9;
+  border: solid 3px #5465FF;
   margin: 0 auto;
   max-width: 650px;
   max-height: 650px;
@@ -92,7 +92,7 @@ form {
 }
 
 h2 {
-  color: #846CF9;
+  color: #5465FF;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -107,8 +107,8 @@ h2 {
 input[type='text'], [type='email'], select, textarea {
 	background: none;
   border: none;
-	border-bottom: solid 2px #846CF9;
-	color: #846CF9;
+	border-bottom: solid 2px #5465FF;
+	color: #5465FF;
 	font-size: 1.000em;
   font-weight: 400;
   letter-spacing: 1px;
@@ -167,8 +167,8 @@ textarea {
 
 #form_button {
   background: none;
-  border: solid 2px #846CF9;
-  color: #846CF9;
+  border: solid 2px #5465FF;
+  color: #5465FF;
   cursor: pointer;
   display: inline-block;
   font-family: Helvetica, Arial, sans-serif;
@@ -189,43 +189,8 @@ textarea {
 }
 
 #form_button:hover {
-  background: #846CF9;
+  background: #5465FF;
   color: #ffffff;
-}
-
-.card {
-  width: 190px;
-  height: 100px;
-  margin-top: 30px;
-  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
-  border-radius: 20px;
-  transition: all .3s;
-}
-
-.card2 {
-  width: 190px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  border-width: 3px;
-  border-radius:10px ;
-  transition: all .2s;
-}
-
-.dark .card2 {
-  background-color: #27272a;
-  border-color: #8983f7;
-  color: #d9d9d9;
-}
-
-.card2:hover {
-  transform: scale(0.98);
-  border-radius: 20px;
-}
-
-.card:hover {
-  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
 
 .checkbox-wrapper-54 input[type="checkbox"] {
