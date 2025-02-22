@@ -160,7 +160,7 @@ const Home = () => {
         </section>
 
         {/* Footer Section */}
-        <div className="w-full">
+        <div className="w-full p-1">
           <Footer darkMode={darkMode} />
         </div>
     </div>
