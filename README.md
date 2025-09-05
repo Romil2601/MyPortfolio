@@ -8,7 +8,7 @@ A modern and interactive portfolio website built with **React.js** , **Tailwind 
 - 📄 Download Resume button
 - 📱💻 Fully responsive for all devices
 - 🎨 Styled with Tailwind CSS
-- 🎮 Interactive skills and project sections
+- 🎮 Interactive skills sections
 - 📣 Testimonials slider for feedback
 - 🔗 Links to social media (LinkedIn, GitHub, Instagram)
 - 🌀 Scroll animations using **AOS** (Animate On Scroll)
