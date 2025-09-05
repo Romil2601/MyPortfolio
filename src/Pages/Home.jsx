@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Contact from "../Components/ContactForm";
 import Footer from "../Components/Footer";
-import Testimonials from "./Testimonials";
+import Testimonials from "../Components/Testimonials";
+import GitHubStats from "../Components/Github_states";
 import { FaReact, FaJs, FaGitAlt, FaBootstrap, FaDownload } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss } from "react-icons/si";
 import Wavify from "react-wavify";
@@ -141,6 +142,14 @@ const Home = () => {
                 </motion.div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* GitHub Stats Section */}
+        <section className="w-full max-w-6xl text-center p-10">
+          <h2 className="text-3xl font-bold">GITHUB STATS</h2>
+          <div>
+            <GitHubStats darkMode={darkMode} />
           </div>
         </section>
 
