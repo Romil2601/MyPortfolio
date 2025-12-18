@@ -77,11 +77,16 @@ const Home = () => {
         <div className="flex justify-evenly items-center space-x-4 ">
           <button className={`button ${darkMode ? "animated-bg-dark bg-black-100 text-white" : "bg-gray-100 text-black animated-bg-light"} mb-1 `}>
             <a
-              href="/resume.pdf"
-              download="resume.pdf"
+              href="/romil_cv.pdf"
+              download="Romil_Raja_CV.pdf"
+              className={`button ${darkMode
+                  ? "animated-bg-dark bg-black text-white"
+                  : "bg-gray-100 text-black animated-bg-light"
+                } mb-1`}
             >
-              <span className="button-content"><FaDownload /> </span>
+              <FaDownload />
             </a>
+
           </button>
           <div class="checkbox-wrapper-54">
             <label className="switch">
@@ -122,56 +127,56 @@ const Home = () => {
 
 
       {/* Skills Section */}
-        <section className="w-full max-w-6xl text-center p-10">
-          <h2 className="text-3xl font-bold">SKILLS</h2>
-          <div data-aos="flip-down">
-            <div className={`mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ${darkMode ? "bg-black" : "bg-white"}`}>
-              {skills.map((skill, index) => (
-                <motion.div
-                  key={index}
-                  className={`p-4 m-4 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 
+      <section className="w-full max-w-6xl text-center p-10">
+        <h2 className="text-3xl font-bold">SKILLS</h2>
+        <div data-aos="flip-down">
+          <div className={`mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ${darkMode ? "bg-black" : "bg-white"}`}>
+            {skills.map((skill, index) => (
+              <motion.div
+                key={index}
+                className={`p-4 m-4 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 
                   ${darkMode ? "bg-gray-800 text-white" : "bg-gray-100 text-gray-900"}`}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.3 }}
-                  whileHover={{ scale: 1.5 }}
-                >
-                  <h3 className="text-xl font-semibold mt-2">{skill.name}</h3>
-                  {skill.icon}
-                  <p className="text-sm text-gray-400 mt-1">{skill.description}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* GitHub Stats Section */}
-        <section className="w-full max-w-6xl text-center p-10">
-          <h2 className="text-3xl font-bold">GITHUB STATS</h2>
-          <div>
-            <GitHubStats darkMode={darkMode} />
-          </div>
-        </section>
-
-        {/* Testimonials Section */}
-        <div className="w-full max-w-6xl text-center p-10">
-          <h2 className="text-3xl font-bold">TESTIMONIALS</h2>
-          <div>
-            <Testimonials darkMode={darkMode} />
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.3 }}
+                whileHover={{ scale: 1.5 }}
+              >
+                <h3 className="text-xl font-semibold mt-2">{skill.name}</h3>
+                {skill.icon}
+                <p className="text-sm text-gray-400 mt-1">{skill.description}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
+      </section>
 
-        {/* Contact Section */}
-        <section className="w-full max-w-6xl text-center p-10">
-          <div>
-            <Contact darkMode={darkMode} />
-          </div>
-        </section>
-
-        {/* Footer Section */}
-        <div className="w-full p-1">
-          <Footer darkMode={darkMode} />
+      {/* GitHub Stats Section */}
+      <section className="w-full max-w-6xl text-center p-10">
+        <h2 className="text-3xl font-bold">GITHUB STATS</h2>
+        <div>
+          <GitHubStats darkMode={darkMode} />
         </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <div className="w-full max-w-6xl text-center p-10">
+        <h2 className="text-3xl font-bold">TESTIMONIALS</h2>
+        <div>
+          <Testimonials darkMode={darkMode} />
+        </div>
+      </div>
+
+      {/* Contact Section */}
+      <section className="w-full max-w-6xl text-center p-10">
+        <div>
+          <Contact darkMode={darkMode} />
+        </div>
+      </section>
+
+      {/* Footer Section */}
+      <div className="w-full p-1">
+        <Footer darkMode={darkMode} />
+      </div>
     </div>
   );
 }
