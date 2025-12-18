@@ -79,12 +79,8 @@ const Home = () => {
             <a
               href="/romil_cv.pdf"
               download="Romil_Raja_CV.pdf"
-              className={`button ${darkMode
-                  ? "animated-bg-dark bg-black text-white"
-                  : "bg-gray-100 text-black animated-bg-light"
-                } mb-1`}
             >
-              <FaDownload />
+            <span className="button-content"><FaDownload /></span>
             </a>
 
           </button>
