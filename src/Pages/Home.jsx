@@ -77,8 +77,8 @@ const Home = () => {
         <div className="flex justify-evenly items-center space-x-4 ">
           <button className={`button ${darkMode ? "animated-bg-dark bg-black-100 text-white" : "bg-gray-100 text-black animated-bg-light"} mb-1 `}>
             <a
-              href="/resume.pdf"
-              download="resume.pdf"
+              href="/romil_cv.pdf"
+              download="romil_cv.pdf"
             >
               <span className="button-content"><FaDownload /> </span>
             </a>
