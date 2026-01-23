@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import emailjs from "@emailjs/browser";
 
 AOS.init();
 
@@ -13,6 +14,13 @@ const Contact = ({ darkMode }) => {
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    }, []);
 
     const sendEmail = (e) => {
         e.preventDefault();

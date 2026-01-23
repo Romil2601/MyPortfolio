@@ -43,14 +43,6 @@ const GitHubStats = ({darkMode}) => {
         alt="Top Languages"
         className="rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
       />
-
-      {/* Streak Stats */}
-      <img
-        key={`streak-${theme}`} // 👈 Forces image to refresh on theme change
-        src={`https://github-readme-streak-stats.herokuapp.com/?user=Romil2601&theme=${theme}`}
-        alt="GitHub Streak"
-        className="rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
-      />
     </div>
   );
 };
