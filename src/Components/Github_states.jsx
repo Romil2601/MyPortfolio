@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const GitHubStats = ({darkMode}) => {
+const GitHubStats = ({ darkMode }) => {
   const [theme, setTheme] = useState("light");
 
   useEffect(() => {
@@ -30,18 +30,15 @@ const GitHubStats = ({darkMode}) => {
     <div className="flex flex-col items-center gap-6 my-8 transition-all duration-500">
       {/* Profile Stats */}
       <img
-        key={`stats-${theme}`} // 👈 Forces image to refresh on theme change
-        src={`https://github-readme-stats.vercel.app/api?username=Romil2601&show_icons=true&theme=${theme}`}
-        alt="GitHub Stats"
-        className="rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
+        src="https://github-readme-stats.vercel.app/api?username=Romil2601&show_icons=true&theme=light&cache_seconds=86400"
+        alt="GitHub stats"
       />
+
 
       {/* Top Languages */}
       <img
-        key={`langs-${theme}`} // 👈 Forces image to refresh on theme change
-        src={`https://github-readme-stats.vercel.app/api/top-langs/?username=Romil2601&layout=compact&theme=${theme}`}
-        alt="Top Languages"
-        className="rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=Romil2601&layout=compact&theme=light&cache_seconds=86400"
+        alt="Top languages"
       />
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import emailjs from "@emailjs/browser";
@@ -25,25 +25,23 @@ const Contact = ({ darkMode }) => {
         e.preventDefault();
         setLoading(true);
 
-        emailjs
-            .sendForm(
-                "service_kvvtdld",
-                "template_nb7d5oj",
-                e.target,
-                "c48_yQKReeWBoj5Cu"
-            )
-            .then(
-                () => {
-                    setSuccess("Message sent successfully! ✅");
-                    setFormData({ name: "", email: "", subject: "", message: "" });
-                    setLoading(false);
-                },
-                (error) => {
-                    setSuccess("Failed to send message ❌");
-                    setLoading(false);
-                    console.error(error);
-                }
-            );
+        emailjs.sendForm(
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            e.target,
+            process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        )
+            .then(() => {
+                setSuccess("Message sent successfully! ✅");
+                setFormData({ name: "", email: "", subject: "", message: "" });
+                setLoading(false);
+            })
+            .catch((error) => {
+                console.error("EmailJS FULL ERROR:", error);
+                setSuccess(error.text || "Failed to send message ❌");
+                setLoading(false);
+            });
+
     };
 
     return (

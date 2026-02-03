@@ -104,7 +104,7 @@ const Home = () => {
           Hi, I'm <span className="text-[#5465FF]">Romil Raja</span>
         </motion.h1>
         <p className="text-5xl mt-2 font-bold">React Developer</p>
-        <p className="text-5xl mt-2 font-bold">+ Frontend Designer </p>
+        <p className="text-5xl mt-2 font-bold">+ Python Designer </p>
       </section>
 
       {/* About Section */}
